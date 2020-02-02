@@ -1,0 +1,301 @@
+{% load static %}
+<html>
+<head>
+
+<title>Document</title>
+<link rel="stylesheet" type="text/css"  href='{% static 'charulstyle.css' %}'>
+</head>
+
+<body >
+<center><font size="4"><h1 style="color:white;">Enter the following details which will help us to predict the most suitable carrer for you!</h1></font></center>
+<center >
+<font size="6">
+<form style="color:white;" method="POST" action="/start/final/">
+    {% csrf_token %}
+  <div class="form-group">
+    <label for="1">Acedamic percentage in Operating Systems</label><br>
+    <input type="number"  class="form-control" id="1" name="osmarks">
+   
+  </div>
+</br>
+     <div class="form-group">
+    <label for="exampleInputPassword1">percentage in Algorithms</label><br>
+    <input type="number" class="form-control" id="exampleInputPassword1" name="algomarks">
+  </div>
+</br>
+  <div class="form-group">
+    <label for="2">percentage in Programming</label><br>
+    <input type="number" class="form-control" id="2" name="progmarks">
+  </div>
+</br>
+  <div class="form-group">
+    <label for="3">Percentage in Software Engineering</label><br>
+    <input type="number" class="form-control" id="3" name="softmarks" >
+  </div>
+</br>
+  <div class="form-group">
+    <label for="4">Percentage in Computer Networks</label><br>
+    <input type="number" class="form-control" id="4" name="cnmarks">
+  </div>
+</br>
+   <div class="form-group">
+    <label for="5">Percentage in Electronics Subjects</label><br>
+    <input type="number" class="form-control" id="5" name="electromarks" >
+  </div>
+</br>
+   <div class="form-group">
+    <label for="exampleInputPassword6">Percentage in Computer Architecture</label><br>
+    <input type="number" class="form-control" id="exampleInputPassword6" name="coamarks">
+  </div>
+</br>
+   <div class="form-group">
+    <label for="exampleInputPassword7">Percentage in Mathematics</label><br>
+    <input type="number" class="form-control" id="exampleInputPassword7" name="mamarks" >
+  </div>
+</br>
+    <div class="form-group">
+    <label for="exampleInputPassword8">Percentage in Communication skills</label><br>
+    <input type="number" class="form-control" id="exampleInputPassword8" name="commmarks">
+  </div>
+</br>
+ <div class="form-group">
+    <label for="exampleInputPassword9">Hours working per day</label><br>
+    <input type="number" max="10" min="1" class="form-control" id="exampleInputPassword9" name="workcap" >
+  </div>
+</br>
+  <div class="form-group">
+    <label for="exampleInputPassword10">Logical quotient rating</label><br>
+    <input type="number" max="10" min="1" class="form-control" id="exampleInputPassword10" name="logical">
+  </div>
+</br>
+   <div class="form-group">
+    <label for="exampleInputPassword11">hackathons</label><br>
+    <input type="number"  max="10" min="0" class="form-control" id="exampleInputPassword11" name="hackathon" >
+  </div>
+</br>
+   <div class="form-group">
+    <label for="exampleInputPassword12">coding skills rating</label><br>
+    <input type="number" max="10" min="1"  class="form-control" id="exampleInputPassword12" name="coding" >
+  </div>
+</br>
+   <div class="form-group">
+    <label for="exampleInputPassword13">public speaking points</label><br>
+    <input type="number" max="10" min="1" class="form-control" id="exampleInputPassword13" name="pubspeaking" >
+  </div>
+</br>
+  <div class="form-group">
+    <label for="formGroupExampleInput14">can work long time before system?</label><br>
+    <input type="radio" class="form-control" id="formGroupExampleInput14" value="yes" name="canwork">yes<br>
+       <input type="radio" class="form-control" id="formGroupExampleInput14" value="no" name="canwork">no<br>
+  </div>
+</br>
+  <div class="form-group">
+    <label for="formGroupExampleInput15">self-learning capability?</label><br>
+    <input type="radio" class="form-control" id="formGroupExampleInput15" value="yes" name="selflearn">yes<br>
+       <input type="radio" class="form-control" id="formGroupExampleInput15" value="no" name="selflearn" >no<br>
+  </div>
+</br>
+  <div class="form-group">
+    <label for="formGroupExampleInput16">Extra-courses did</label><br>
+    <input type="radio" class="form-control" id="formGroupExampleInput16" value="yes" name="extracurr" >yes<br>
+      <input type="radio" class="form-control" id="formGroupExampleInput16" value="no" name="extracurr" >no<br>
+  </div>
+</br>
+  <div class="form-group">
+    <label for="formGroupExampleInput17">certifications</label><br>
+    <input type="radio" class="form-control" id="formGroupExampleInput17" value="python" name="certificates">python<br>
+      <input type="radio" class="form-control" id="formGroupExampleInput17" name="certificates" value="app development" >app development<br>
+      <input type="radio" class="form-control" id="formGroupExampleInput17" name="certificates" value="shell programming">shell programming<br>
+      <input type="radio" class="form-control" id="formGroupExampleInput17" name="certificates" value="full stack">full stack<br>
+       <input type="radio" class="form-control" id="formGroupExampleInput17" name="certificates" value="information security">Information security<br>
+      <input type="radio" class="form-control" id="formGroupExampleInput17" name="certificates" value="hadoop">Hadoop<br>
+         <input type="radio" class="form-control" id="formGroupExampleInput17" name="certificates" value="distro making">distro making<br>
+         <input type="radio" class="form-control" id="formGroupExampleInput17" name="certificates"  value="machine learning">machine Learning<br>
+      <input type="radio" class="form-control" id="formGroupExampleInput17" name="certificates" value="r programming">r programming<br>
+  </div>
+</br>
+<div class="form-group">
+    <label for="formGroupExampleInput18">workshops</label><br>
+    <input type="radio" class="form-control" id="formGroupExampleInput18" name="workshop" value="cloud computing">cloud computing<br>
+    <input type="radio" class="form-control" id="formGroupExampleInput18" name="workshop" value="web technologies">web technologies<br>
+    <input type="radio" class="form-control" id="formGroupExampleInput18" name="workshop" value="data science">data science<br>
+    <input type="radio" class="form-control" id="formGroupExampleInput18" name="workshop" value="database security">database security<br>
+    <input type="radio" class="form-control" id="formGroupExampleInput18" name="workshop" value="testing">testing<br>
+    <input type="radio" class="form-control" id="formGroupExampleInput18" name="workshop" value="hacking">hacking<br>
+      <input type="radio" class="form-control" id="formGroupExampleInput18" name="workshop" value="system designing">system designing<br>
+      <input type="radio" class="form-control" id="formGroupExampleInput18" name="workshop" value="game development">game development<br>
+
+  </div>
+</br>
+<div class="form-group">
+    <label for="formGroupExampleInput19">talenttests taken?</label><br>
+    <input type="radio" class="form-control" id="formGroupExampleInput19" value="yes" name="talent" >yes<br>
+      <input type="radio" class="form-control" id="formGroupExampleInput19" value="no" name="talent" >no<br>
+  </div>
+</br>
+<div class="form-group">
+    <label for="formGroupExampleInput20">olympiads</label><br>
+       <input type="radio" class="form-control" id="formGroupExampleInput20" value="yes" name="olympiad" >yes<br>
+      <input type="radio" class="form-control" id="formGroupExampleInput20" value="no" name="olympiad" >no<br>
+  </div>
+</br>
+<div class="form-group">
+    <label for="formGroupExampleInput21">reading and writing skills</label><br>
+
+     <input type="radio" class="form-control" id="formGroupExampleInput21" name="readwrite" value="poor">poor<br>
+    <input type="radio" class="form-control" id="formGroupExampleInput21" name="readwrite" value="medium">medium<br>
+    <input type="radio" class="form-control" id="formGroupExampleInput21" name="readwrite" value="excellent">excellent<br>
+
+  </div>
+</br>
+<div class="form-group">
+    <label for="formGroupExampleInput22">memory capability score</label><br>
+
+     <input type="radio" class="form-control" id="formGroupExampleInput22" name="retention" value="poor">poor<br>
+         <input type="radio" class="form-control" id="formGroupExampleInput22" name="retention" value="medium">medium<br>
+         <input type="radio" class="form-control" id="formGroupExampleInput22" name="retention" value="excellent">excellent<br>
+  </div>
+</br>
+<div class="form-group">
+    <label for="formGroupExampleInput23">Interested subjects</label><br>
+    <input type="radio" class="form-control" id="formGroupExampleInput23" value="cloud computing" name="interestsub" >cloud computing<br>
+    <input type="radio" class="form-control" id="formGroupExampleInput23" value="networks" name="interestsub" >networks<br>
+    <input type="radio" class="form-control" id="formGroupExampleInput23" value="hacking" name="interestsub" >hacking<br>
+    <input type="radio" class="form-control" id="formGroupExampleInput23" value="Computer Architecture" name="interestsub" >Computer Architecture<br>
+    <input type="radio" class="form-control" id="formGroupExampleInput23" value="programming" name="interestsub" >programming<br>
+    <input type="radio" class="form-control" id="formGroupExampleInput23" value="IOT" name="interestsub" >IOT<br>
+    <input type="radio" class="form-control" id="formGroupExampleInput23" value="data engineering" name="interestsub" >data engineering<br>
+    <input type="radio" class="form-control" id="formGroupExampleInput23" value="Software Engineering" name="interestsub" >Software Engineering<br>
+    <input type="radio" class="form-control" id="formGroupExampleInput23" value="Management" name="interestsub" >Management<br>
+    <input type="radio" class="form-control" id="formGroupExampleInput23" value="parallel computing" name="interestsub" >parallel computing<br>
+
+  </div>
+</br>
+<div class="form-group">
+    <label for="formGroupExampleInput24">interested career area </label><br>
+    <input type="radio" class="form-control" id="formGroupExampleInput24" value="system developer" name="interestca" >system developer<br>
+    <input type="radio" class="form-control" id="formGroupExampleInput24" value="Business process analyst" name="interestca" >Business process analyst<br>
+    <input type="radio" class="form-control" id="formGroupExampleInput24" value="developer" name="interestca" >developer<br>
+    <input type="radio" class="form-control" id="formGroupExampleInput24" value="testing" name="interestca" >testing<br>
+    <input type="radio" class="form-control" id="formGroupExampleInput24" value="security" name="interestca" >security<br>
+    <input type="radio" class="form-control" id="formGroupExampleInput24" value="cloud computing" name="interestca" >cloud computing<br>
+
+  </div>
+</br>
+<div class="form-group">
+    <label for="formGroupExampleInput25">Job/Higher Studies?</label><br>
+    <input type="radio" class="form-control" id="formGroupExampleInput25" name="jobstudy" value="job">Job<br>
+    <input type="radio" class="form-control" id="formGroupExampleInput25" name="jobstudy" value="higherstudies">higherstudies<br>
+  </div>
+</br>
+<div class="form-group">
+    <label for="formGroupExampleInput26">Type of company want to settle in?</label><br>
+
+     <input type="radio" class="form-control" id="formGroupExampleInput26" value="Web Services" name="company" >Web Services<br>
+     <input type="radio" class="form-control" id="formGroupExampleInput26" value="SAaS services" name="company" >SAaS services<br>
+     <input type="radio" class="form-control" id="formGroupExampleInput26" value="Sales and Marketing" name="company" >Sales and Marketing<br>
+    <input type="radio" class="form-control" id="formGroupExampleInput26" value="Testing and Maintainance Services" name="company" >Testing and Maintainance Services<br>
+    <input type="radio" class="form-control" id="formGroupExampleInput26" value="product development" name="company" >product development<br>
+        <input type="radio" class="form-control" id="formGroupExampleInput26" value="BPA" name="company" >BPA<br>
+     <input type="radio" class="form-control" id="formGroupExampleInput26" value="Finance" name="company" >Finance<br>
+     <input type="radio" class="form-control" id="formGroupExampleInput26" value="Cloud Services" name="company" >Cloud Services<br>
+
+  </div>
+</br>
+<div class="form-group">
+    <label for="formGroupExampleInput27">Taken inputs from seniors or elders</label><br>
+    <input type="radio" class="form-control" id="formGroupExampleInput27" name="seniorhelp" value="yes">yes<br>
+     <input type="radio" class="form-control" id="formGroupExampleInput27" name="seniorhelp" value="no">no<br>
+  </div>
+</br>
+<div class="form-group">
+    <label for="formGroupExampleInput28">interested in games</label><br>
+       <input type="radio" class="form-control" id="formGroupExampleInput28" value="yes" name="games" >yes<br>
+    <input type="radio" class="form-control" id="formGroupExampleInput28" value="no" name="games">no<br>
+  </div>
+</br>
+<!--<div class="form-group">
+    <label for="formGroupExampleInput29">Interested Type of Books</label><br>
+    <input type="radio" class="form-control" id="formGroupExampleInput29" name="book" value="Travel">Travel<br>
+    <input type="radio" class="form-control" id="formGroupExampleInput29" name="book" value="Childrens">Childrens<br>
+    <input type="radio" class="form-control" id="formGroupExampleInput29" name="book" value="Anthology">Anthology<br>
+    <input type="radio" class="form-control" id="formGroupExampleInput29" name="book" value="Drama"> Drama<br>
+    <input type="radio" class="form-control" id="formGroupExampleInput29" name="book" value="Romance">Romance<br>
+    <input type="radio" class="form-control" id="formGroupExampleInput29" name="book" value="Math">Math<br>
+    <input type="radio" class="form-control" id="formGroupExampleInput29" name="book" value="Self help">Self help<br>
+    <input type="radio" class="form-control" id="formGroupExampleInput29" name="book" value="Religion-Spirituality">Religion-Spirituality<br>
+    <input type="radio" class="form-control" id="formGroupExampleInput29" name="book" value="Self help">Self help<br>
+    <input type="radio" class="form-control" id="formGroupExampleInput29" name="book" value="Trilogy">Trilogy<br>
+    <input type="radio" class="form-control" id="formGroupExampleInput29" name="book" value="Autobiographies">Autobiographies<br>
+    <input type="radio" class="form-control" id="formGroupExampleInput29" name="book" value="Mystery"> Mystery<br>
+    <input type="radio" class="form-control" id="formGroupExampleInput29" name="book" value="Diaries"> Diaries<br>
+    <input type="radio" class="form-control" id="formGroupExampleInput29" name="book" value="Journals"> Journals<br>
+    <input type="radio" class="form-control" id="formGroupExampleInput29" name="book" value="Art"> Art<br>
+    <input type="radio" class="form-control" id="formGroupExampleInput29" name="book" value="Horror"> Horror<br>
+    <input type="radio" class="form-control" id="formGroupExampleInput29" name="book" value="Encyclopedias">Encyclopedias<br>
+    <input type="radio" class="form-control" id="formGroupExampleInput29" name="book" value="Travel">Travel<br>
+    <input type="radio" class="form-control" id="formGroupExampleInput29" name="book" value="Action and Adventure">Action and Adventure<br>
+    <input type="radio" class="form-control" id="formGroupExampleInput29" name="book" value="Fantasy"> Fantasy<br
+    <input type="radio" class="form-control" id="formGroupExampleInput29" name="book" value="Comics"> Comics<br>
+    <input type="radio" class="form-control" id="formGroupExampleInput29" name="book" value="Guide"> Guide<br>
+    <input type="radio" class="form-control" id="formGroupExampleInput29" name="book" value="Science fiction">Science fiction<br>
+    <input type="radio" class="form-control" id="formGroupExampleInput29" name="book" value="Health">Health<br>
+    <input type="radio" class="form-control" id="formGroupExampleInput29" name="book" value="Cookbooks">Cookbooks<br>
+    <input type="radio" class="form-control" id="formGroupExampleInput29" name="book" value="Health">Health<br>
+  </div>-->
+
+<div class="form-group">
+    <label for="formGroupExampleInput30">Salary Range Expected</label><br>
+    <input type="radio" class="form-control" id="formGroupExampleInput30" name="prefsalarywork" value="salary"> salary<br>
+    <input type="radio" class="form-control" id="formGroupExampleInput30" name="prefsalarywork" value="Work"> work<br>
+
+
+  </div>
+</br>
+<div class="form-group">
+    <label for="formGroupExampleInput31">In a Realtionship?</label><br>
+     <input type="radio" class="form-control" id="formGroupExampleInput31" name="singlemingle"  value="yes" >yes<br>
+    <input type="radio" class="form-control" id="formGroupExampleInput31" name="singlemingle"  value="no" >no<br>
+
+  </div>
+</br>
+<div class="form-group">
+    <label for="formGroupExampleInput32">Gentle or Tuff behaviour?</label><br>
+    <input type="radio" class="form-control" id="formGroupExampleInput32" name="gentlestubborn"  value="stubborn" >stubborn<br>
+    <input type="radio" class="form-control" id="formGroupExampleInput32" name="gentlestubborn"  value="gentle" >gentle<br>
+
+  </div>
+</br>
+<div class="form-group">
+    <label for="formGroupExampleInput33">Management or Technical</label><br>
+    <input type="radio" class="form-control" id="formGroupExampleInput33" name="managetech"  value="Management" >Management<br>
+    <input type="radio" class="form-control" id="formGroupExampleInput33" name="managetech"  value="Technical" >Technical<br>
+
+  </div>
+</br>
+<div class="form-group">
+    <label for="formGroupExampleInput34">hard/smart worker</label><br>
+   <input type="radio" class="form-control" id="formGroupExampleInput34" name="hardsmart" value="hard worker">hard worker<br>
+    <input type="radio" class="form-control" id="formGroupExampleInput34" name="hardsmart" value="smart worker">smart worker<br>
+  </div>
+</br>
+<div class="form-group">
+    <label for="formGroupExampleInput35">worked in teams ever?</label><br>
+    <input type="radio" class="form-control" id="formGroupExampleInput35" name="teamplayer" value="yes">yes<br>
+    <input type="radio" class="form-control" id="formGroupExampleInput35" name="teamplayer" value="no">no<br>
+
+  </div>
+</br>
+<div class="form-group">
+    <label for="formGroupExampleInput36">Introvert</label><br>
+    <input type="radio" class="form-control" id="formGroupExampleInput36" name="introvert" value="yes">yes<br>
+     <input type="radio" class="form-control" id="formGroupExampleInput36" name="introvert" value="no">no<br>
+  </div>
+</br>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</font>
+<center>
+
+</body>
+</html>

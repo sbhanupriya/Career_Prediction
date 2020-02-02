@@ -1,0 +1,68 @@
+ {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"  href='{% static 'dakshistyle.css' %}'>
+    <link href="{% static "favicon.ico" %}" rel="shortcut icon" type="image/x-icon">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+   <header id="head">
+     <h1>Career Prediction System</h1>
+   </header>
+     <div class="cl1">
+  <p>As students are going through their academics and pursuing their interested courses, it is very important for them to assess their capabilities and identify their interests so that they will get to know in which career area their interests and capabilities are going to put them in. This will help them in improving their performance and motivating their interests so that they will be directed towards their targeted career and get settled in that. Also recruiters while recruiting the candidates after assessing them in all different aspects, these kind of career recommender systems help them in deciding in which job role the candidate should be kept in based on his/her performance and other evaluations. This project mainly concentrates on the career area prediction of computer science domain candidates.
+  </p>
+  <p>It will help the students analyze what are the best career fields for them as per the trained machine learning model according to the marks attained in various subjects, their interests and help them excel in their lives. The target users are the college students. There are various career prediction recommendation systems like Cocube, Amcat , but they only take technical skills into consideration. But our project takes into account abilities of students in sports, hobbies, interests and skills into consideration and hence will provide competition to already established systems.
+  </p>
+</div>
+<div class="cl3">
+<form  action ="start/login/" method='POST'>
+  {% csrf_token %}
+  <div>
+
+  <label for="username">Username</label><br>
+    <input type="text" id="username" name="username"></div>
+    <div>
+    <label for="password">Password</label><br>
+      <input type="password" id="password" name="password"></div>
+     <button> Login</button>
+     <br>
+     <br>
+      <a href="start/signup/">NEW USER SIGNUP HERE</a>
+
+</form>
+</div>
+<div id="id4">
+  <h1>Our Team </h1>
+  <ul type="disc" class="horizontal" >
+    <li><font size="50">Dakshi Aggarwal</font></li>
+    <li><font size="50">Charul Jain</font></li>
+    <li><font size="50">Bhanu Priya</font ></l1>
+  <ul>
+</div>
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

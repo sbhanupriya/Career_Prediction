@@ -1,0 +1,55 @@
+
+body
+{
+	margin:0px;
+}
+
+body
+{
+	background-image: url(  'pic5.jpg' );
+	background-attachment: fixed;
+	opacity:0.9;
+	background-position: center;
+	background-size: cover;
+	background-repeat:no-repeat;
+	height:100vh;
+}
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+#signup header
+{
+  color:lightblue;
+  font-size: 2rem;
+  font-weight:bold;
+}
+
+#signup label:hover, h1:hover, button:hover
+{
+	color:red;
+}
+#signup
+{
+	height:60vh;
+	width:45vw;
+	justify-content: center;
+	align-items: center;
+	background-image:url("{% static "pic5.jpg" %}");
+	margin-left: 3px;
+	text-decoration-color: white;
+	border-width: 20px;
+	text-align: center;
+	border-style:solid;
+	color:lightblue;
+	font-size:1.5rem;
+	border-color:lightblue;
+	text-align:center;
+	border-radius: 50px;
+	box-shadow:20
+}

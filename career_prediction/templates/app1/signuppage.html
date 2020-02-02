@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Signup</title>
+	<link rel="stylesheet" type="text/css" href='{% static 'style.css' %}'>
+	<link rel="shortcut icon" type="image/x-icon" href="{% static "favicon.ico" %}">
+
+</head>
+<body>
+	<section id='signup'>
+	  <header>
+		<h1>Create Your account!!</h1>
+	</header>
+   <form method="POST" action="start/login2/">
+	   {% csrf_token %}
+<div>
+	<label for='name'>Username </label><br>
+   	<input type="text" name="name" id="name" required></div>
+<div>
+	<label for='emailid'>Email-id</label><br>
+   	<input type="email" name="emailid" id="emailid"required placeholder="abc@gmail.com"></div>
+<div>
+	<label for='password' >Enter Password</label><br>
+    <input type="password" name="password" id="password" required>
+</div>
+<!--
+<div>
+	<label for='renterpassword'>Re-enter Password</label><br>
+    <input type="password" name="password" required placeholder="re-enter password">
+</div>-->
+<div>
+   <button>Sign-Up</button> 
+</div>
+   </form>
+	</section>
+</body>
+</html>

@@ -1,0 +1,50 @@
+body{
+  margin:0px;
+  background-image: url("pic5.jpg");
+  background-repeat: none;
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.6;
+}
+.cl1{
+ color:white;
+ text-size:30px;
+ width:50vw;
+}
+#head h1
+{
+  color:lightblue;
+  text-align:center;
+  font-weight:bold;
+  font-family:cursive;
+  font-size:50px;
+  text-transform:capitalize;
+}
+p{
+
+}
+form label{
+color:white;
+
+
+}
+.horizontal ul
+{
+  list-style:none;
+}
+.horizontal li{
+  display:inline;
+  margin:0px 3px 0px;
+}
+.h1{
+  font-size: 75px;
+  font-style: italic;
+  font-color:pink;
+}
+a{
+color:white;
+}
+#id4{
+color:white;
+font-size: 40px;
+}
